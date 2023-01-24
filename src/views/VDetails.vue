@@ -39,11 +39,14 @@ onIonViewWillLeave(() => {
 
 <template>
   <ion-page>
-    <ion-spinner name="dots" v-if="showSpinner" />
-    <ion-content :fullscreen="true" v-else>
+    
+    <ion-content :fullscreen="true">
       <div id="container">
-        <ion-button router-link="/">Go Back</ion-button>
-        Details
+        <ion-spinner name="dots" v-if="showSpinner" />
+        <div v-else>
+          <ion-button router-link="/">Go Back</ion-button>
+          <p>Details</p>
+        </div>
       </div>
     </ion-content>
     

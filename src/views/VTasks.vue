@@ -36,12 +36,6 @@ const confirm = () => {
 <template>
   <ion-page>
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Tasks</ion-title>
-        </ion-toolbar>
-      </ion-header>
-
       <div id="container">
         <ion-button router-link="/detail">Go to detail</ion-button>
         <ion-searchbar animated placeholder="Find task"></ion-searchbar>
